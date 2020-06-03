@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <meta charset="utf-8">
+  <style>
+    body {
+      background: #fafafa;
+    }
+  </style>
+</head>
+<body>
+  <div id="demo"></div>
+
+  <script type="module">
+    import { html, render } from 'lit-html';
+    import '../bio-card.js';
+  </script>
+
+  <bio-card name="Chris Robin" img="https://image.freepik.com/free-vector/man-profile-cartoon_18591-58482.jpg" twitter="https://www.twitter.com" github="https://www.github.com" linkedin="https://linkedin.com">
+    <div slot="location">State College</div>
+    <div slot="job title">Junior Intern</div>
+    
+
+  </bio-card>
+</body>
+</html>
